@@ -1,0 +1,56 @@
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.titulo {
+    background-color: white;
+    color: #2B54C2;
+    margin-left: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pt_azul {
+    background-color: #2B54C2;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 5%;
+}
+.botao {
+    background-color: #FF6565;  
+    color: white;
+    padding: 10px;
+    border: #2B54C2;
+    border-radius: 5px;
+}
+.titulo2 {
+    background-color: red;
+    padding: 1px;
+    text-align: center;
+}
+.cards {
+    gap: 30px;
+    display: flex;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+.card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.rodape {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: gray;
+    padding: 5px;
+}
