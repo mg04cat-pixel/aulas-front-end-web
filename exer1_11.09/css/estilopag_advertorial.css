@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: linear-gradient(to right, #0000d6, #000030, #000000);
+    color: white;
+}
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+header h1 {
+    margin-bottom: 20px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.saude_header {
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-bottom: 0;
+}
+.verm {
+    width: 380px;
+    background-color: red;
+    text-align: justify;
+    height: 250px;
+    padding-top: 10px;
+    padding: 10px;
+}
+.azul {
+    width: 380px;
+    background-color: blue;
+    text-align: justify;
+    height: 250px;
+    padding-top: 10px;
+    padding: 10px;
+}
