@@ -1,0 +1,45 @@
+*{
+    margin: auto;
+}
+body {
+    background-color: azure;
+    margin: 0px;
+    background-image: linear-gradient(to right);
+}
+header {
+    background-color: blue;
+    color: white;
+    height: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+section {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+figure {
+    background-color: white;
+    width: 300px;
+    margin: 15px auto;
+    border: 3px solid black;
+    padding: 10px;
+}
+img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+figcaption {
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+}
+footer {
+    background-color: gray;
+    color: white;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
