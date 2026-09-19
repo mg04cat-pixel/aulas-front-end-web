@@ -1,0 +1,63 @@
+* {
+    margin: auto;
+    padding: 0px;
+}
+.mea-culpa-regular {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 30px;
+  text-align: center;
+  width: 210px;
+}
+
+main {
+    width: 1000px;
+    background-color: #ffe0b5;
+}
+header {
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+}
+.evo {
+    width: 1000px;
+    border-top: solid #D8B96A 2px;
+    border-bottom: solid #D8B96A 2px;
+}
+
+.parte1 {
+    width: 900px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.texto {
+    text-align: justify;
+    align-items: center;
+    padding: 20px;
+}
+.imagem1 {
+    width: 150px;
+    height: 100px;
+}
+.imagem2 {
+    width: 150px;
+    height: 300px;
+}
+.parte2 {
+    width: 900px;
+    align-items: center;
+    display: flex;
+}
+.texto2 {
+    padding: 50px;
+}
+footer {
+    width: 1000px;
+    padding-top: 20px;
+    border-top: solid #D8B96A 2px;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    color: grey;
+}
