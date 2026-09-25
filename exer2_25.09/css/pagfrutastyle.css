@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+
+}
+header {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px 5%;
+}
+
+.logo {
+    font-weight: 900; /* Negrito */
+    font-size: 24px;
+    color: orangered;
+}
+nav a { /* acessa item especifico dentro da tag */
+    margin: 5px; 
+    padding: 15px; /* Aumenta tamanho clicável do link */
+    text-decoration: none; /* Tira o sublinhado do link */
+    color: #333;
+    font-weight: 600;
+}
+a:hover { /* Cria pseudoelemento / pseudaclasse, faz com que seja direcionado ao link, recomendado colcocar uma cor, indica local */
+    background-color: orangered;
+    border: 5px #333;
+    border-radius: 10px;
+}
+main {
+    align-items: center;
+    justify-content: center;
+}
+.pt_1 {
+    margin: auto;
+    width: 60%;
+    display: flex; 
+    justify-content: space-around;
+    text-align: left;   
+}
+button {
+    padding: 8px;
+    color: white;
+    background-color: orangered;
+    border: 5px white;
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 15%;       
+}
+img {
+    border: 5px white;
+    border-radius: 80px;
+}
+h1 {
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.pt_2 {
+    margin: auto;
+    gap: 250px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    margin-top: 80px;
+    align-items: center;
+    text-align: center;
+    width: 200px; /* medidas do card */
+    height: 80px; /* medidas do card */
+    border-bottom: 5px solid orangered; /* margem colorida no texto */
+    border-radius: 25px;
+}
+footer {
+    margin-top: 150px;
+    text-align: center;   
+    padding: 20px; 
+    color: white;
+    font-weight: 900; /* Negrito */
+    font-size: 15px;
+    background-color: orangered;
+}
