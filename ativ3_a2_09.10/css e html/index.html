@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 - A2 - Wireframe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="header" alt="EducaNext">EducaNext</header>
+    <main>
+        <section id="hero_section">
+            <h1 id="h1_hero_section">Aprenda a usar IA no seu dia a dia de gestor em um único final de semana</h1>
+            <h3 id="h3_hero_section">Workshop intensivo, 100% prático e sem jargão técnico. 14 e 15 de novembro, online e ao vivo</h3>
+            <article id="mensag_lote">O lote promocional encerra em:
+                <div id="contagem_regressiva">25/10 às 23:59:00</div>
+            </article>
+            <section id="cta_button"><button>Garantir minha vaga no lote promocional</button>
+                <article id="texto_abx_button">De R$ 797 por <strong>R$ 497</strong> · Garantia de 7 dias</article>
+            </section>
+
+            <section id="workshop_titulo">
+                <h2>Para quem é esse Workshop</h2>
+                <article id="workshop">
+                <img src="https://images.pexels.com/photos/7414039/pexels-photo-7414039.jpeg" alt="Instrutor Workshop">
+                <article id="text_worshop">Gestores e diretores que perdem horas com relatórios, e-mails e reuniões.
+                                            Líderes de equipe que querem produtividade sem depender da área de TI.
+                                            Profissionais que estão assumindo cargos de liderança e querem se destacar.
+                                            Não é necessário nenhum conhecimento técnico. Este não é um curso de programação.
+                                            Legenda da foto: Rafael Duarte, ex-diretor de operações e consultor de IA aplicada à gestão.
+                </article>
+                </article>
+
+            <section id="aprendiz_workshop">
+                <h2>O que você vai aprender</h2>
+                <article id="text_aprendiz_worshop"> Sábado, 9h às 17h: Fundamentos e produtividade
+                                                    Como a IA funciona, sem jargão
+                                                    Prompts que funcionam e os erros mais comuns
+                                                    Automação de e-mails, atas e relatórios
+                                                    Prática guiada com os seus próprios casos
+                                                    Domingo, 9h às 17h: IA aplicada à gestão
+                                                    Análise de dados e apoio à decisão
+                                                    Comunicação e apresentações com a equipe
+                                                    Seu plano de 30 dias para adotar IA
+                                                    Privacidade, ética e riscos no uso corporativo
+                </article>  
+                <section id="cta_button"><button>Garantir minha vaga no lote promocional</button>  
+            </section>
+
+            <section id="depoimentos">
+                <h2>Depoimentos</h2>
+                <br>
+                <h3>Quem já fez, aplicou na semana seguinte</h3>
+                <div id="depoimentos-mae">
+                    <article id="carla_menezes">
+                        <h4>Carla Menezes, gerente comercial</h4>
+                        <img src="https://images.pexels.com/photos/15675799/pexels-photo-15675799.jpeg" alt="Carla Menezes">
+                        <p>“Saí do sábado com três rotinas automatizadas. Economizo cerca de 5 horas por semana.”</p>                        
+                    </article>
+                    <article id="eduardo_lima">
+                        <h4>Eduardo Lima, diretor financeiro</h4>
+                        <img src="https://images.pexels.com/photos/26820703/pexels-photo-26820703.jpeg" alt="Eduardo Lima">
+                        <p>“Zero jargão. Apliquei na segunda-feira seguinte.”</p>                        
+                    </article>
+                    <article id="priscila_antunes">
+                        <h4>Priscila Antunes, coordenadora de RH</h4>
+                        <img src="https://images.pexels.com/photos/20596944/pexels-photo-20596944.jpeg" alt="priscila antunes">
+                        <p>“Valeu cada centavo. A parte de prompts para relatórios já se pagou.”</p>                        
+                    </article>
+                </div>
+            </section>
+
+                    <section id="faq">
+                        <h2>FAQ</h2>
+                        <div id="mae">
+                        <article id="perg1">Não tenho tempo para um curso.
+                            <div id="resp1">São dois dias, uma única vez. O que você aprende devolve horas toda semana.</div>
+                        </article>
+                        <article id="perg2">É caro?
+                            <div id="resp2">O lote promocional custa R$ 497, contra R$ 797 no valor cheio. Se você economizar poucas horas por semana, o investimento se paga rápido. E ainda tem garantia</div>
+                        </article>
+                        </div>
+                    </section>
+    <script>
+        // Define a data alvo: 25 de outubro de 2026 às 23:59:00
+        // Nota: No JavaScript, os meses começam em 0 (Janeiro = 0, Outubro = 9)
+        const dataAlvo = new Date(2026, 9, 25, 23, 59, 0).getTime();
+        const elementoTimer = document.getElementById('contagem_regressiva');
+
+        const intervalo = setInterval(() => {
+            const agora = new Date().getTime();
+            const diferenca = dataAlvo - agora;
+
+            // Verifica se o tempo acabou
+            if (diferenca <= 0) {
+                clearInterval(intervalo);
+                elementoTimer.textContent = "Tempo esgotado!";
+                return;
+            }
+
+            // Calcula dias, horas, minutos e segundos restantes
+            const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+            // Formata para garantir dois dígitos onde necessário
+            const dStr = String(dias).padStart(2, '0');
+            const hStr = String(horas).padStart(2, '0');
+            const mStr = String(minutos).padStart(2, '0');
+            const sStr = String(segundos).padStart(2, '0');
+
+            // Atualiza o texto no elemento solicitado
+            elementoTimer.textContent = `${dStr}d ${hStr}h ${mStr}m ${sStr}s`;
+        }, 1000);
+    </script>            
+        </section>
+    </main>
+    <footer id="footer">Contato · Termos de uso · Política de privacidade · © 2026 EducaNext</footer>
+</body>
+</html>
