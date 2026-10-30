@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer 1 _ 30.10 - Javascript</title>
+</head>
+<body>
+    <label for="tipo">Tipo de cálculo</label>
+    
+    <select id="tipo" onchange="verificaOpcao()">
+        <option value="">Selecione</option>
+        <option value="som">Somar</option>
+        <option value="sub">Subtrair</option>
+        <option value="mult">Multiplicar</option>
+        <option value="div">Dividir</option>
+    </select>
+    <div id="blocoCaixa" style="display: none; margin-top: 10px; ">
+        <label for="">Número 1</label>
+        <input id="num1" type="text" placeholder="Digite aqui..">
+        <label for="">Número 2</label>
+        <input id="num2" type="text" placeholder="Digite aqui..">
+    </div>
+    <div id="botaosomar" style="display: none; margin-top: 20px;"><button id="somar">Somar</button></div>
+    <div id="botaosubtrair" style="display: none; margin-top: 20px;"><button id="subtrair">Subtrair</button></div>
+    <div id="botaomultiplicar" style="display: none; margin-top: 20px;"><button id="multiplicar">Multiplicar</button></div>
+    <div id="botaodividir" style="display: none; margin-top: 20px;"><button id="dividir">Dividir</button></div>
+
+    <h1 id="res"></h1>
+
+
+</body>
+<script>
+    const btnSom = document.getElementById('botaosomar') // transforma botao em objeto
+    btnSom.addEventListener('click', function() {
+        let n1 = parseInt(document.getElementById('num1').value)
+        let n2 = parseInt(document.getElementById('num2').value)
+        // necessario converter o caractere digitado pra inteiro = parseInt
+        document.getElementById('res').textContent = "Resultado " + (n1+n2) // quem recebe o calculo - id res, texto na forma para resposta
+    })  // .addEventListener - fica estudando o botao
+    const btnSub = document.getElementById('botaosubtrair') // transforma botao em objeto
+     btnSub.addEventListener('click', function() {
+        let n1 = parseInt(document.getElementById('num1').value)
+        let n2 = parseInt(document.getElementById('num2').value)
+        // necessario converter o caractere digitado pra inteiro = parseInt
+        document.getElementById('res').textContent = "Resultado " + (n1-n2) // quem recebe o calculo - id res, texto na forma para resposta
+    })
+    const btnMul = document.getElementById('botaomultiplicar') // transforma botao em objeto
+     btnMul.addEventListener('click', function() {
+        let n1 = parseInt(document.getElementById('num1').value)
+        let n2 = parseInt(document.getElementById('num2').value)
+        // necessario converter o caractere digitado pra inteiro = parseInt
+        document.getElementById('res').textContent = "Resultado " + (n1*n2) // quem recebe o calculo - id res, texto na forma para resposta
+    })
+    const btnDiv = document.getElementById('botaodividir') // transforma botao em objeto
+     btnDiv.addEventListener('click', function() {
+        let n1 = parseInt(document.getElementById('num1').value)
+        let n2 = parseInt(document.getElementById('num2').value)
+        // necessario converter o caractere digitado pra inteiro = parseInt
+        document.getElementById('res').textContent = "Resultado " + (n1/n2) // quem recebe o calculo - id res, texto na forma para resposta
+    })
+
+
+    function verificaOpcao() {
+        const selectPrincipal = document.getElementById('tipo').value // valor selecionado inicialmente  - const declara tipo valor, document olha para o doc html, getelementbyid pega elemento pelo ID
+        const blocoOutro = document.getElementById('blocoCaixa')
+        const botoes = ['botaosomar', 'botaosubtrair', 'botaomultiplicar', 'botaodividir']
+        botoes.forEach(id => {
+            document.getElementById(id).style.display = 'none'
+        });
+
+        if (selectPrincipal == 'som') {
+            blocoOutro.style.display = 'block' // .style css  dentro do js + display, mostra oq foi escondido pelo display none
+            botaosomar.style.display = 'block'
+        }
+        else if (selectPrincipal == 'sub') {
+            blocoOutro.style.display = 'block'
+            botaosubtrair.style.display = 'block'
+        }
+        else if (selectPrincipal == 'mult') {
+            blocoOutro.style.display = 'block'
+            botaomultiplicar.style.display = 'block'
+        }
+        else if (selectPrincipal == 'div') {
+            blocoOutro.style.display = 'block'
+            botaodividir.style.display = 'block'
+        }
+    }
+
+</script>
+</html>
