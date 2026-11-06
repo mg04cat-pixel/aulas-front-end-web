@@ -1,0 +1,50 @@
+
+
+:root {
+    --cor-fichario: #f6f884;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#fichario {
+    margin: 25px 20px;
+    width: 756px;
+    background-color: var();
+}
+
+/* Abas superiores */
+#cards {
+    display: flex;
+    gap: 2px;
+    height: 42px;
+}
+
+#cards p {
+    width: 166px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-fichario);
+
+    border: 1px solid black;
+    border-radius: 18px 18px 0 0;
+
+    font-size: 16px;
+}
+
+/* Área principal */
+#conteudo {
+    width: 756px;
+    height: 379px;
+
+    background-color: var(--cor-fichario);
+
+    border: 1px solid black;
+}
